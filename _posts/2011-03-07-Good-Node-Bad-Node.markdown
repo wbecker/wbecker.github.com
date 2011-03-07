@@ -61,4 +61,6 @@ So what are we going to do:
  * Try to break up code into smaller files, aiming for no more than 200 lines each. We do this, with the understanding that each file will be a complete module that can be understood on its own, with a minimal understanding of the broader context.
  * Eliminate global variables: pass variables to the functions that need them. Reducing global state will mean that there is less dependency between sections.
  * Break up overly indented code (ifs+loops+async functions), so no function has more than one level of function nesting. 
- * Refactor handleMessageContents to have functions registered against each possible message parameter. Then when a message is received, instead of going through a set of if/elses, the right function can be directly found.
+ * Refactor handleMessageContents to have functions registered against each possible message parameter. When a message is received, instead of going through a set of if/elses, the right function can be directly found.
+
+After this hopefully we will have what passes for a nice node application, while not changing any functionality. Let the refactoring commence!
