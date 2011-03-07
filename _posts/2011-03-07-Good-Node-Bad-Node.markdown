@@ -3,7 +3,7 @@ layout: default
 title: Good Node, Bad Node
 ---
 
-Node.js is apparently famous for being hard to write nice code. Its async tendencies can create "pyramids", which are seen as ugly. 
+Node.js is apparently famous for being hard to write nice code. Its asynchronous tendencies can create "pyramids", which are seen as ugly. 
 
 Having starting using node just recently I have found that I have been pumping out code at great rates, but on the downside, have been doing it all in the same file, with a long chain of code dangling off one or two entry points. 
 
